@@ -1,6 +1,6 @@
 # grunt-filepath
 
-> Replace a string with the file's relative file path / URL. Originally created to get a dynamic URL in to the OpenGraph metadata.
+> Replace a string with the file's relative file path / URL. Originally created to get a dynamic URL in to the OpenGraph metadata of static HTML pages.
 
 
 ## The "filepath" task
