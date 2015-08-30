@@ -28,7 +28,7 @@ module.exports = function (grunt) {
     filepath: {
       multiple_files: {
         files: {
-          'src_and_dest': ['./test/files']
+          'src_and_dest': ['./test']
         },
         base: 'https://mywebsite.com/',
         replace: '@@path'

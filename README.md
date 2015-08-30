@@ -8,7 +8,12 @@
 ### Overview
 In your project's Gruntfile, add a section named `filepath` to the data object passed into `grunt.initConfig()`.
 
-In this example, we're adding the relative file path to the folder './test/files' and adding a base of 'https://mywebsite.com/' to make the relative file path a URL.
+In the example below, we're:
+1. Recursing through the 'test' folder
+2. Finding the string '@@path'
+3. Replacing it with the relative file path prefixed with the base variable 'https://mywebsite.com/'.
+
+*NOTE: Omit the base parameter if you wish to use the relative path to the file*
 
 ```js
 grunt.initConfig({
@@ -17,7 +22,7 @@ grunt.initConfig({
       base: 'https://mywebsite.com/',
       replace: '@@path',
       files: {
-        'src_and_dest': ['./test/files']
+        'src_and_dest': ['./test']
       }
     }
   },
@@ -26,7 +31,7 @@ grunt.initConfig({
 
 ### Options
 
-#### options.folders
+#### options.files
 Type: `String`
 Default value: `@@path`
 
