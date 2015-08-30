@@ -32,7 +32,7 @@ grunt.initConfig({
 ### Options
 
 #### options.files (required)
-Type: `String`
+Type: `Array`
 Default value: none
 
 
