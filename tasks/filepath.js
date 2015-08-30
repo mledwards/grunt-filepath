@@ -15,7 +15,7 @@ module.exports = function (grunt) {
 
   var recursive = require('recursive-readdir');
 
-  grunt.registerMultiTask('filepath', 'Useful for when you wish to get a dynamic file path or URL in to a static page, such as in metadata (OpenGraph URL).', function () {
+  grunt.registerMultiTask('filepath', 'Replace a string with the file\'s relative file path / URL. Originally created to get a dynamic URL in to the OpenGraph metadata of static HTML pages.', function () {
 
     var self = this;
     // Merge task-specific and/or target-specific options with these defaults.

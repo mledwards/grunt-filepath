@@ -1,6 +1,6 @@
 {
   "name": "grunt-filepath",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Replace a string with the file's relative file path / URL. Originally created to get a dynamic URL in to the OpenGraph metadata of static HTML pages.",
   "homepage": "https://github.com/mledwards/grunt-filepath",
   "repository": "https://github.com/mledwards/grunt-filepath.git",
