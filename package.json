@@ -1,0 +1,28 @@
+{
+  "name": "grunt-filepath",
+  "version": "0.0.2",
+  "description": "Useful for when you wish to get a dynamic file path or URL in to a static page, such as in metadata (OpenGraph URL).",
+  "homepage": "https://github.com/mledwards/grunt-filepath",
+  "repository": "https://github.com/mledwards/grunt-filepath.git",
+  "author": {
+    "name": "Martin Edwards",
+    "email": "mail@mledwards.co.uk",
+    "url": "https://github.com/mledwards"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-nodeunit": "~0.3.0",
+    "grunt": "~0.4.2",
+    "jshint-stylish": "~0.1.5",
+    "load-grunt-tasks": "~0.3.0"
+  }
+}
