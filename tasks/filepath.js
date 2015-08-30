@@ -56,19 +56,6 @@ module.exports = function (grunt) {
           done();
         });
       });
-
-      // src.forEach(function(folder) {
-      //   var files = grunt.file.expand({cwd: folder}, '*');
-      //   files.forEach(function(file) {
-      //     var filepath = folder + '/' + file;
-      //     var contents = grunt.file.read(folder + '/' + file);
-
-      //     grunt.file.write(filepath, contents.replace(new RegExp(self.data.replace, 'g'), self.data.base + filepath));
-      //     // Print a success message.
-      //     grunt.log.writeln('File "' + filepath + '" paths added.');
-      //   });
-        
-      // });
     });
   });
 
