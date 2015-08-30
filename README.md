@@ -1,6 +1,6 @@
 # grunt-filepath
 
-> Add relative file path or URL to static pages.
+> Replace a string with the file's relative file path / URL. Originally created to get a dynamic URL in to the OpenGraph metadata.
 
 
 ## The "filepath" task
@@ -9,9 +9,9 @@
 In your project's Gruntfile, add a section named `filepath` to the data object passed into `grunt.initConfig()`.
 
 In the example below, we're:
-1. Recursing through the 'test' folder
-2. Finding the string '@@path'
-3. Replacing it with the relative file path prefixed with the base variable 'https://mywebsite.com/'.
+1.  Recursing through the 'test' folder
+2.  Finding the string '@@path'
+3.  Replacing it with the relative file path prefixed with the base variable 'https://mywebsite.com/'.
 
 *NOTE: Omit the base parameter if you wish to use the relative path to the file*
 
