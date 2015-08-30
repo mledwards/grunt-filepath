@@ -31,9 +31,10 @@ grunt.initConfig({
 
 ### Options
 
-#### options.files
+#### options.files (required)
 Type: `String`
-Default value: `@@path`
+Default value: none
+
 
 The folders you wish to search and replace
 

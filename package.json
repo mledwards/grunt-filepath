@@ -1,6 +1,6 @@
 {
   "name": "grunt-filepath",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Useful for when you wish to get a dynamic file path or URL in to a static page, such as in metadata (OpenGraph URL).",
   "homepage": "https://github.com/mledwards/grunt-filepath",
   "repository": "https://github.com/mledwards/grunt-filepath.git",
