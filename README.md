@@ -10,6 +10,7 @@ In your project's Gruntfile, add a section named `filepath` to the data object p
 
 In the example below, we're:
 1.  Recursing through the 'test' folder
+2.  Ignoring any files or folders that contain the strings in the ignore array
 2.  Finding the string '@@path'
 3.  Replacing it with the relative file path prefixed with the base variable 'https://mywebsite.com/'.
 
@@ -21,7 +22,7 @@ grunt.initConfig({
     dev: {
       base: 'https://mywebsite.com/',
       replace: '@@path',
-      ignore: 'some-string',
+      ignore: ['ignore-this', 'ignore-that'],
       files: {
         'src_and_dest': ['./test']
       }
