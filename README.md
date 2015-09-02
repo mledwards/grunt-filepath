@@ -21,6 +21,7 @@ grunt.initConfig({
     dev: {
       base: 'https://mywebsite.com/',
       replace: '@@path',
+      ignore: 'some-string',
       files: {
         'src_and_dest': ['./test']
       }
@@ -35,7 +36,6 @@ grunt.initConfig({
 Type: `Array`
 Default value: none
 
-
 The folders you wish to search and replace
 
 #### options.replace
@@ -43,6 +43,12 @@ Type: `String`
 Default value: `@@path`
 
 The variable name you wish to replace with the relative file path
+
+#### options.ignore
+Type: `Array`
+Default value: none
+
+The files and folders you wish to ignore, currently only in string format.
 
 #### options.base
 Type: `String`

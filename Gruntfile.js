@@ -30,6 +30,7 @@ module.exports = function (grunt) {
         files: {
           'src_and_dest': ['./test']
         },
+        ignore: ['ignore-this', 'ignore-that'],
         base: 'https://mywebsite.com/',
         replace: '@@path'
       }
