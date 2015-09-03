@@ -9,7 +9,7 @@
 In your project's Gruntfile, add a section named `filepath` to the data object passed into `grunt.initConfig()`.
 
 In the example below, we're:
-1.  Recursing through the 'test' folder
+1.  Recursing through everything in the 'test' folder
 2.  Ignoring any files or folders that contain the strings in the ignore array
 2.  Finding the string '@@path'
 3.  Replacing it with the relative file path prefixed with the base variable 'https://mywebsite.com/'.
@@ -19,15 +19,15 @@ In the example below, we're:
 ```js
 grunt.initConfig({
   filepath: {
-    dev: {
-      base: 'https://mywebsite.com/',
-      replace: '@@path',
-      ignore: ['ignore-this', 'ignore-that'],
+    multiple_files: {
       files: {
-        'src_and_dest': ['./test']
-      }
+        'src_and_dest': ['./test/**']
+      },
+      ignore: ['ignore-this'],
+      base: 'https://mywebsite.com/',
+      replace: '@@path'
     }
-  },
+  }
 })
 ```
 
@@ -37,7 +37,7 @@ grunt.initConfig({
 Type: `Array`
 Default value: none
 
-The folders you wish to search and replace
+The files and folders you wish to search and replace
 
 #### options.replace
 Type: `String`
