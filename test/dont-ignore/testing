@@ -1,4 +1,4 @@
 Line 1
-https://mywebsite.com/test/ignore-this/testing
+@@path
 Line 3
-https://mywebsite.com/test/another/testing
+@@path
