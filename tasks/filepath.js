@@ -53,11 +53,12 @@ module.exports = function (grunt) {
 
         // Write files to 
         if (write) {
+          var url = file.replace(self.data.remove || '', '');
           grunt.file.write(
             file,
-            grunt.file.read(file).replace(new RegExp(self.data.replace || '@@path', 'g'), self.data.base + file)
+            grunt.file.read(file).replace(new RegExp(self.data.replace || '@@path', 'g'), self.data.base + url)
           );
-          grunt.log.writeln('File "' + file + '" paths added.');
+          grunt.log.writeln('File "' + url + '" paths added.');
         }
       });
     });

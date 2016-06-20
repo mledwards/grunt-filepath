@@ -23,6 +23,7 @@ grunt.initConfig({
       files: {
         'src_and_dest': ['./test/**']
       },
+      remove: './test/',
       ignore: ['ignore-this'],
       base: 'https://mywebsite.com/',
       replace: '@@path'
@@ -56,6 +57,12 @@ Type: `String`
 Default value: ``
 
 Turn your relative file path in to a URL.
+
+#### options.remove
+Type: `String`
+Default value: ``
+
+Remove any part of the filepath after it's resolved. E.g. you may not want "/build" in the URL.
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
